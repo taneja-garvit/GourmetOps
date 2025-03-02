@@ -6,7 +6,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-type Food struct {
+type Menu struct {
 	ID         primitive.ObjectID `bson:"_id" json:"id"`
 	Name       *string `json:"name" validate:"required"`
 	Price      *float64 `json:"price" validate:"required"`

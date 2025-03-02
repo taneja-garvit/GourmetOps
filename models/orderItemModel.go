@@ -6,7 +6,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-type orderItems struct {
+type OrderItems struct {
 	ID            primitive.ObjectID `bson:"_id"`
 	Quantity      *string            `json:"quantity" validate:"required"`
 	UnitPrice     float64            `json:"unit_price" validate:"required"`
